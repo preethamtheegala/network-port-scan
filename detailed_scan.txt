@@ -1,0 +1,158 @@
+# Nmap 7.95 scan initiated Thu Apr  9 17:17:17 2026 as: /usr/lib/nmap/nmap -A -oN detailed_scan.txt 192.168.124.0/24
+Nmap scan report for 192.168.124.1
+Host is up (0.00070s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL (unauthorized)
+5000/tcp open  rtsp
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/935.7.1
+|     X-Apple-ProcessingTime: 3
+|     X-Apple-RequestReceivedTimestamp: 94261865
+|   GetRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/935.7.1
+|     X-Apple-ProcessingTime: 3
+|     X-Apple-RequestReceivedTimestamp: 94256823
+|   HTTPOptions: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/935.7.1
+|     X-Apple-ProcessingTime: 4
+|     X-Apple-RequestReceivedTimestamp: 94261855
+|   RTSPRequest: 
+|     RTSP/1.0 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/935.7.1
+|     X-Apple-ProcessingTime: 7
+|     X-Apple-RequestReceivedTimestamp: 94256855
+|   SIPOptions: 
+|     RTSP/1.0 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/935.7.1
+|     CSeq: 42 OPTIONS
+|     X-Apple-ProcessingTime: 3
+|_    X-Apple-RequestReceivedTimestamp: 94261874
+7000/tcp open  rtsp
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/935.7.1
+|     X-Apple-ProcessingTime: 2
+|     X-Apple-RequestReceivedTimestamp: 94261860
+|   GetRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/935.7.1
+|     X-Apple-ProcessingTime: 6
+|     X-Apple-RequestReceivedTimestamp: 94261826
+|   HTTPOptions: 
+|     HTTP/1.1 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/935.7.1
+|     X-Apple-ProcessingTime: 5
+|     X-Apple-RequestReceivedTimestamp: 94261847
+|   RTSPRequest: 
+|     RTSP/1.0 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/935.7.1
+|     X-Apple-ProcessingTime: 7
+|     X-Apple-RequestReceivedTimestamp: 94256814
+|   SIPOptions: 
+|     RTSP/1.0 403 Forbidden
+|     Content-Length: 0
+|     Server: AirTunes/935.7.1
+|     CSeq: 42 OPTIONS
+|     X-Apple-ProcessingTime: 3
+|_    X-Apple-RequestReceivedTimestamp: 94261870
+|_irc-info: Unable to open connection
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5000-TCP:V=7.95%I=7%D=4/9%Time=69D791D1%P=aarch64-unknown-linux-gnu
+SF:%r(GetRequest,8E,"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:\x200
+SF:\r\nServer:\x20AirTunes/935\.7\.1\r\nX-Apple-ProcessingTime:\x203\r\nX-
+SF:Apple-RequestReceivedTimestamp:\x2094256823\r\n\r\n")%r(RTSPRequest,8E,
+SF:"RTSP/1\.0\x20403\x20Forbidden\r\nContent-Length:\x200\r\nServer:\x20Ai
+SF:rTunes/935\.7\.1\r\nX-Apple-ProcessingTime:\x207\r\nX-Apple-RequestRece
+SF:ivedTimestamp:\x2094256855\r\n\r\n")%r(HTTPOptions,8E,"HTTP/1\.1\x20403
+SF:\x20Forbidden\r\nContent-Length:\x200\r\nServer:\x20AirTunes/935\.7\.1\
+SF:r\nX-Apple-ProcessingTime:\x204\r\nX-Apple-RequestReceivedTimestamp:\x2
+SF:094261855\r\n\r\n")%r(FourOhFourRequest,8E,"HTTP/1\.1\x20403\x20Forbidd
+SF:en\r\nContent-Length:\x200\r\nServer:\x20AirTunes/935\.7\.1\r\nX-Apple-
+SF:ProcessingTime:\x203\r\nX-Apple-RequestReceivedTimestamp:\x2094261865\r
+SF:\n\r\n")%r(SIPOptions,A0,"RTSP/1\.0\x20403\x20Forbidden\r\nContent-Leng
+SF:th:\x200\r\nServer:\x20AirTunes/935\.7\.1\r\nCSeq:\x2042\x20OPTIONS\r\n
+SF:X-Apple-ProcessingTime:\x203\r\nX-Apple-RequestReceivedTimestamp:\x2094
+SF:261874\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port7000-TCP:V=7.95%I=7%D=4/9%Time=69D791D6%P=aarch64-unknown-linux-gnu
+SF:%r(RTSPRequest,8E,"RTSP/1\.0\x20403\x20Forbidden\r\nContent-Length:\x20
+SF:0\r\nServer:\x20AirTunes/935\.7\.1\r\nX-Apple-ProcessingTime:\x207\r\nX
+SF:-Apple-RequestReceivedTimestamp:\x2094256814\r\n\r\n")%r(GetRequest,8E,
+SF:"HTTP/1\.1\x20403\x20Forbidden\r\nContent-Length:\x200\r\nServer:\x20Ai
+SF:rTunes/935\.7\.1\r\nX-Apple-ProcessingTime:\x206\r\nX-Apple-RequestRece
+SF:ivedTimestamp:\x2094261826\r\n\r\n")%r(HTTPOptions,8E,"HTTP/1\.1\x20403
+SF:\x20Forbidden\r\nContent-Length:\x200\r\nServer:\x20AirTunes/935\.7\.1\
+SF:r\nX-Apple-ProcessingTime:\x205\r\nX-Apple-RequestReceivedTimestamp:\x2
+SF:094261847\r\n\r\n")%r(FourOhFourRequest,8E,"HTTP/1\.1\x20403\x20Forbidd
+SF:en\r\nContent-Length:\x200\r\nServer:\x20AirTunes/935\.7\.1\r\nX-Apple-
+SF:ProcessingTime:\x202\r\nX-Apple-RequestReceivedTimestamp:\x2094261860\r
+SF:\n\r\n")%r(SIPOptions,A0,"RTSP/1\.0\x20403\x20Forbidden\r\nContent-Leng
+SF:th:\x200\r\nServer:\x20AirTunes/935\.7\.1\r\nCSeq:\x2042\x20OPTIONS\r\n
+SF:X-Apple-ProcessingTime:\x203\r\nX-Apple-RequestReceivedTimestamp:\x2094
+SF:261870\r\n\r\n");
+MAC Address: 16:7F:CE:D8:61:65 (Unknown)
+Device type: general purpose
+Running: Apple macOS 11.X|12.X|13.X
+OS CPE: cpe:/o:apple:mac_os_x:11 cpe:/o:apple:mac_os_x:12 cpe:/o:apple:mac_os_x:13
+OS details: Apple macOS 11 (Big Sur) - 13 (Ventura) or iOS 16 (Darwin 20.6.0 - 22.4.0)
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.70 ms 192.168.124.1
+
+Nmap scan report for 192.168.124.2
+Host is up (0.00047s latency).
+All 1000 scanned ports on 192.168.124.2 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 00:50:56:EC:9B:96 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized
+Running: VMware Player
+OS CPE: cpe:/a:vmware:player
+OS details: VMware Player virtual NAT device
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.47 ms 192.168.124.2
+
+Nmap scan report for 192.168.124.254
+Host is up (0.00042s latency).
+All 1000 scanned ports on 192.168.124.254 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 00:50:56:E4:A7:48 (VMware)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.42 ms 192.168.124.254
+
+Nmap scan report for 192.168.124.130
+Host is up (0.000047s latency).
+All 1000 scanned ports on 192.168.124.130 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr  9 17:17:54 2026 -- 256 IP addresses (4 hosts up) scanned in 37.24 seconds
